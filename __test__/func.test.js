@@ -8,4 +8,5 @@ test("Ich erwarte ein Array wenn ich GET benutze", async () => {
   expect(response.statusCode).toBe(200);
   expect(response.body).toBeInstanceOf(Object);
   //server.close();
+  done();
 });
