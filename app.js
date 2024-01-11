@@ -1,5 +1,4 @@
 import express from "express";
-import supertest from "supertest";
 
 export const server = express();
 

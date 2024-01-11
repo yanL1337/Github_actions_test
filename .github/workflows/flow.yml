@@ -4,11 +4,17 @@ on:
     branches:
       - "main"
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker -v
   RouteTesting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
+      - uses: actions/express
         with:
           node-version: "20.x"
       - run: npm i
