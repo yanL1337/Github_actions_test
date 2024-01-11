@@ -7,5 +7,5 @@ test("Ich erwarte ein Array wenn ich GET benutze", async () => {
   const response = await request.get("/");
   expect(response.statusCode).toBe(200);
   expect(response.body).toBeInstanceOf(Object);
-  server.close();
+  //server.close();
 });
